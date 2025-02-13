@@ -1,0 +1,60 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.info-meetup 
+    margin-bottom: 64px
+
+
+.info-meetup h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+    margin-bottom: 24px
+
+
+.info-meetup-block 
+    @include mixins.flex-row-gap(flex, 32px)
+    justify-content: space-between
+
+
+.info-meetup-item 
+    @include mixins.flex-row-gap(flex, 24px)
+    background: rgba(151, 202, 209, 0.08)
+    border-radius: 8px
+    width: 50%
+    padding-top: 32px
+    padding-bottom: 24px
+
+
+.info-meetup-img 
+    padding-left: 24px
+
+.info-meetup-img:hover 
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+
+.info-meetup-description 
+    @include mixins.flex-column-gap(flex, column, 16px)
+
+
+.info-meetup-description h5 
+    @include mixins.font-weight-size-height-color(600, 20px, 120%, variables.$main-color)
+
+
+.info-meetup-text 
+    @include mixins.font-size-height-color(16px, 150%, variables.$main-color)
+    width: 85%
+    
+
+.info-meetup-more 
+    @include mixins.font-weight-size-height-color(500, 16px, 150%, variables.$lincs-color)
+
+.info-meetup-more:hover 
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+

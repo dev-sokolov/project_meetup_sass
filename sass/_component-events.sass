@@ -1,0 +1,175 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.events 
+    margin-top: 24px
+
+.events-title 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 28px
+
+.events-title-gen 
+    @include mixins.flex-row-gap(flex, 20px)
+    align-items: center
+
+.events-title-gen h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+
+.events-title-icon 
+    @include mixins.flex-row-gap(flex, 30px)
+    border-radius: 8px
+    width: 239px
+    height: 44px
+    background: rgba(151, 202, 209, 0.12)
+    align-items: center
+
+.events-title-icon p:hover
+    cursor: pointer
+    position: relative
+    bottom: 3px
+    transition: 0.3s 
+
+.events-title-icon img:hover
+    cursor: pointer
+    position: relative
+    bottom: 3px
+    transition: 0.3s 
+
+.events-title-icon p 
+    @include mixins.font-weight-size-height-color(600, 20px, 120%, variables.$lincs-color)
+    padding-left: 12px
+
+.events-title-icon img 
+    width: 22px
+    height: 22px
+
+.events-title-all 
+    @include mixins.font-weight-size-height-color(500, 16px, 150%, variables.$lincs-color)
+
+.events-title-all:hover 
+    cursor: pointer
+    position: relative
+    bottom: 3px
+    transition: 0.3s 
+
+/* ------------events-block------------ */
+
+.events-block-row,
+.upcoming-block-row 
+    display: flex
+    margin-bottom: 60px
+    flex-wrap: wrap
+    gap: 30px
+
+.events-card,
+.upcoming-card 
+    display: flex
+    flex-direction: column
+    width: 272px
+    margin-bottom: 30px
+
+.events-img img,
+.upcoming-img img 
+    width: 100%
+
+.events-card h4,
+.upcoming-card h4 
+    @include mixins.font-weight-size-height-color(600, 20px, 120%, variables.$main-color)
+    margin-top: 12px
+    max-width: 84%
+
+.events-card:hover
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+.upcoming-card:hover
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+.upcoming-title-all:hover 
+    cursor: pointer
+    position: relative
+    bottom: 3px
+    transition: 0.3s 
+
+
+.events-card p,
+.upcoming-card p 
+    @include mixins.font-weight-size-height-color(500, 14px, 143%, variables.$additional-color)
+    padding: 14px 0
+
+.events-date,
+.upcoming-date 
+    @include mixins.flex-row-gap(flex, 8px)
+
+.events-date-text,
+.upcoming-date-text 
+    @include mixins.font-size-height-color(14px, 143%, variables.$main-color)
+    letter-spacing: -0.02em
+    text-transform: uppercase
+
+.events-info,
+.upcoming-info 
+    @include mixins.flex-row-gap(flex, 20px)
+    align-items: center
+
+
+.events-info-going,
+.upcoming-info-going 
+    @include mixins.flex-row-gap(flex, 6px)
+    align-items: center
+    
+
+.events-info-going-icon,
+.upcoming-info-going-icon 
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.events-info-going-text,
+.events-info-free-text,
+.upcoming-info-going-text,
+.upcoming-info-free-text 
+    @include mixins.font-size-height-color(16px, 150%, variables.$main-color)
+
+
+.events-info-free-icon,
+.upcoming-info-free-icon 
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.events-info-free,
+.upcoming-info-free 
+    @include mixins.flex-row-gap(flex, 6px)
+    align-items: center
+    margin-top: 4px
+
+/* ------------upcoming-events------------ */
+
+.upcoming-events 
+    padding-top: 40px
+
+
+.upcoming-title 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 24px
+
+
+.upcoming-title h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+
+
+.upcoming-title div 
+    @include mixins.font-weight-size-height-color(500, 16px, 150%, variables.$lincs-color)
+
+

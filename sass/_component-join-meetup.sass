@@ -1,0 +1,48 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.join-meetup 
+    @include mixins.flex-row-gap(flex, 111px)
+    align-items: center
+    padding: 20px 20px 16px 56px
+    border-radius: 8px
+    background: rgba(151, 202, 209, 0.08)
+
+
+.join-meetup-info 
+    @include mixins.flex-column-gap(flex, column, 16px)
+    width: 55%
+
+.join-meetup-img-adapt
+    display: none
+
+
+.join-meetup-info h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+
+
+.join-meetup-info p 
+    @include mixins.font-size-height-color(16px, 150%, variables.$main-color)
+
+
+.join-meetup-info button 
+    @include mixins.font-weight-size-height-color(500, 16px, 150%, #fff)
+    border-radius: 8px
+    border: none
+    width: 192px
+    height: 40px
+    background: #e32359
+
+.join-meetup-info button:hover
+    background: #00798a
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+
+
+
+
+

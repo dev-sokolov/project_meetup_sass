@@ -1,0 +1,51 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.title 
+    @include mixins.flex-row-gap(flex, 46px)
+    margin-top: 71px
+    margin-bottom: 98px
+
+.headind-descr 
+    @include mixins.flex-column-gap(flex, column, 24px)
+    width: 50%
+
+.headind-descr h1 
+    @include mixins.font-weight-size-height-color(700, 42px, 124%, variables.$main-color)
+
+
+.headind-descr p 
+    @include mixins.font-weight-size-height-color(400, 16px, 150%, variables.$main-color)
+
+
+.headind-img 
+    width: 50%
+
+
+.headind-descr button 
+    @include mixins.font-size-height-color(16px, 150%, #fff)
+    border-radius: 8px
+    width: 125px
+    height: 40px
+    background: #00798a
+    border: none
+    outline: none
+
+.headind-descr a 
+    color: #fff
+
+.headind-img img 
+    width: 379px
+    height: 269px
+
+#join:hover
+    background: rgb(246, 88, 88)
+    cursor: pointer
+    transition: 0.3s
+    
+
+
+
+
+

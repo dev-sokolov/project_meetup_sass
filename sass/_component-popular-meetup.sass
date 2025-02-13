@@ -1,0 +1,43 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.popular-meetup 
+    margin-bottom: 64px
+
+
+.popular-meetup h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+    margin-bottom: 16px
+
+
+.popular-meetup p 
+    @include mixins.font-size-height-color(16px, 150%, variables.$additional-color)
+    margin-bottom: 28px
+
+
+.popular-meetup-cities 
+    display: flex
+    flex-wrap: wrap
+    gap: 41px
+
+
+.popular-meetup-city 
+    @include mixins.flex-column-gap(flex, column, 24px)
+
+.popular-meetup-city:hover 
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+    
+
+.popular-meetup-city-img img
+    width: 205px
+    height: 205px  
+
+
+.popular-meetup-city p 
+    @include mixins.font-weight-size-height-color(600, 20px, 140%, variables.$main-color)
+    text-align: center

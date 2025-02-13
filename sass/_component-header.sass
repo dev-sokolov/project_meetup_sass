@@ -1,0 +1,130 @@
+@use 'variables'    
+@use 'mixins'
+
+
+#header
+    max-width: 1512px
+    margin: 0 auto
+
+nav 
+    display: flex
+    justify-content: space-between
+
+.block-search 
+    display: flex
+    align-items: center
+    height: 64px
+    width: 50%
+
+#logo 
+    width: 94px
+    height: 34px
+    margin: 4px 40px 4px 24px
+
+#logo:hover 
+    position: relative
+    bottom: 3px
+    transition: 0.4s
+
+.search 
+    width: 80%
+
+
+.form 
+    display: flex
+    align-items: center
+
+.search-icon 
+    border: 2px solid rgba(217, 217, 217, 1)
+    border-right: none
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px 5px 10px 10px
+    border-top-left-radius: 8px
+    border-bottom-left-radius: 8px
+
+#search-events 
+    @include mixins.font-size-height-color(16px, 18.75px, rgba(0, 0, 0, 1))
+    width: 45%
+    height: 42px
+    outline: none
+    border: 2px solid rgba(217, 217, 217, 1)
+    border-left: none
+
+#search-area 
+    @include mixins.font-size-height-color(16px, 18.75px, #000)
+    width: 45%
+    height: 42px
+    border: 2px solid rgba(217, 217, 217, 1)
+    border-left: none
+    border-right: none
+    padding-left: 17px
+
+#search-btn 
+    width: 42px
+    height: 42px
+    background: rgba(246, 88, 88, 1)
+    border: none
+    border-top-right-radius: 8px
+    border-bottom-right-radius: 8px
+
+#search-btn:hover
+    background: rgb(0, 121, 138)
+    cursor: pointer
+    transition: .4s
+
+
+/* ------------block-registr------------ */
+
+.block-registr 
+    @include mixins.flex-row-gap(flex, 22px)
+    align-items: center
+
+.language 
+    @include mixins.flex-row-gap(flex, 4px)
+
+.language-logo 
+    width: 20px
+    height: 20px
+
+.language-logo:hover
+    position: relative
+    bottom: 3px
+    transition: .4 
+    cursor: pointer
+
+.language-logo-adapt
+    display: none
+
+.log-in,
+.language-text 
+    @include mixins.font-weight-size-height-color(500, 14px, 20px, rgba(33, 33, 33, 1))
+
+.language-text:hover
+    position: relative
+    bottom: 3px
+    transition: .4 
+    cursor: pointer
+
+.log-in:hover
+    position: relative
+    bottom: 3px
+    transition: .4 
+    cursor: pointer
+
+#sing-up_btn 
+    @include mixins.font-weight-size-height-color(500, 14px, 20px, rgba(255, 255, 255, 1))
+    margin: 14px 50px 14px 0
+    background-color: rgba(0, 121, 138, 1)
+    border-radius: 8px
+    padding: 8px 16px
+    border: none
+
+#sing-up_btn:hover
+    position: relative
+    bottom: 3px
+    transition: .4 
+    cursor: pointer
+

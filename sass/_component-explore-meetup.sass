@@ -1,0 +1,35 @@
+@use 'variables'    
+@use 'mixins'
+
+
+.explore-meetup h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+    margin-top: 64px
+    margin-bottom: 24px
+
+.explore-meetup-block 
+    @include mixins.flex-row-gap(flex, 16px)
+    margin-bottom: 64px
+    flex-wrap: wrap
+
+.explore-meetup-item 
+    @include mixins.flex-column-gap(flex, column, 16px)
+    align-items: center
+    justify-content: center
+    width: 135px
+    height: 112px
+    border-radius: 8px
+    background: rgba(151, 202, 209, 0.08)
+    text-align: center
+    padding: 5px
+
+.explore-meetup-item:hover
+    background: rgba(114, 217, 231, 0.512)
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+
+
+

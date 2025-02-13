@@ -1,0 +1,316 @@
+@media (max-width: 1024px) {
+  #map {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  #main-filter {
+    padding-top: 0;
+  }
+  .title-filter h1 {
+    margin-top: 22px;
+  }
+  .enents-filter {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 393px) {
+  #main-filter {
+    max-width: 370px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  #section-filter {
+    width: 100%;
+  }
+  #map {
+    display: none;
+  }
+  .title-filter h1 {
+    font-size: 25px;
+    line-height: 144%;
+    margin-top: 20px;
+  }
+  .enents-filter {
+    margin-bottom: 18px;
+    height: 72px;
+    overflow-x: scroll;
+  }
+  .enents-filter::-webkit-scrollbar {
+    width: 100px;
+  }
+  .enents-filter::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 10px;
+  }
+  .enents-filter::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .card {
+    padding-bottom: 0;
+  }
+  .card-img {
+    width: 97px;
+    height: 54px;
+  }
+  .card-date {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+  .card-title {
+    font-size: 9px;
+  }
+  .card-category {
+    font-weight: 400;
+    font-size: 8px;
+  }
+  .card-attendees {
+    display: none;
+  }
+  .cards-filtered {
+    margin-bottom: 20px;
+  }
+}
+#main-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+#main-filter {
+  width: 100%;
+  max-width: 1236px;
+  margin: 0 15px;
+  margin-bottom: 88px;
+  padding-top: 81px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#section-filter {
+  width: 604px;
+}
+
+.title-filter h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 129%;
+  color: #000;
+}
+
+.title-filter p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #00798a;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  width: 64px;
+  text-align: center;
+  border-bottom: 4px solid #00798a;
+}
+
+.enents-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+  outline: none;
+  border: none;
+}
+
+.select {
+  border: none;
+  padding: 16px 5px 16px 5px;
+  border-radius: 40px;
+  background: #f6f7f8;
+  height: 46px;
+  transition: 0.3s;
+}
+
+.select:hover {
+  cursor: pointer;
+  background: #d9d9d9;
+  position: relative;
+  bottom: 2px;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 16px;
+  padding-bottom: 13px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: #d9d9d9;
+  transition: 0.4s;
+  position: relative;
+  bottom: 3px;
+  transition: 0.4s;
+}
+
+.card-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #7c6f50;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212121;
+}
+
+.card-category {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #707070;
+  margin-bottom: 48px;
+}
+
+.card-attendees {
+  font-size: 14px;
+  line-height: 143%;
+  color: #707070;
+}
+
+.map-title p {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #212121;
+}
+
+.map-title h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 140%;
+  color: #212121;
+  margin-bottom: 14px;
+}
+
+.map-img {
+  width: 350px;
+  height: 285px;
+  border-radius: 12px;
+  background-image: url("../assets/events-filter-img/map.png");
+  position: relative;
+}
+
+.map-btn {
+  position: absolute;
+  top: 41%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map-btn:hover {
+  cursor: pointer;
+}
+
+.cross-btn {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+}
+
+.cross-btn:hover {
+  cursor: pointer;
+}
+
+.card-img {
+  border-radius: 8px;
+  max-width: 159px;
+  max-height: 89px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+  #map {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  #main-filter {
+    padding-top: 0;
+  }
+  .title-filter h1 {
+    margin-top: 22px;
+  }
+  .enents-filter {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 393px) {
+  #main-filter {
+    max-width: 370px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  #section-filter {
+    width: 100%;
+  }
+  #map {
+    display: none;
+  }
+  .title-filter h1 {
+    font-size: 25px;
+    line-height: 144%;
+    margin-top: 20px;
+  }
+  .enents-filter {
+    margin-bottom: 18px;
+    height: 72px;
+    overflow-x: scroll;
+  }
+  .enents-filter::-webkit-scrollbar {
+    width: 100px;
+  }
+  .enents-filter::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 10px;
+  }
+  .enents-filter::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .card {
+    padding-bottom: 0;
+  }
+  .card-img {
+    width: 97px;
+    height: 54px;
+  }
+  .card-date {
+    font-size: 8px;
+    text-transform: uppercase;
+  }
+  .card-title {
+    font-size: 9px;
+  }
+  .card-category {
+    font-weight: 400;
+    font-size: 8px;
+  }
+  .card-attendees {
+    display: none;
+  }
+  .cards-filtered {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style-filter.css.map */

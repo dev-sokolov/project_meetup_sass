@@ -1,0 +1,23 @@
+@use 'variables' 
+@mixin flex-column-gap($display: flex, $flex-dir: column, $gap)
+    display: $display
+    flex-direction: $flex-dir
+    gap: $gap
+
+@mixin flex-row-gap($display: flex, $gap)
+    display: $display
+    gap: $gap
+
+@mixin font-weight-size-height-color($font-weight, $font-size, $line-height, $color)
+    font-weight: $font-weight
+    font-size: $font-size
+    line-height: $line-height
+    color: $color
+
+@mixin font-size-height-color($font-size, $line-height, $color)
+    font-size: $font-size
+    line-height: $line-height
+    color: $color
+
+
+

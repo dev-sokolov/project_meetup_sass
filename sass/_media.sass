@@ -1,0 +1,436 @@
+@use 'variables'    
+@use 'mixins'
+
+$mobile: 393px
+$tablet: 820px
+$laptop: 1024px
+
+
+
+@media (max-width: $laptop)  
+
+    #footer
+        padding: 24px 80px 40px 80px
+
+@media (max-width: $tablet) 
+    // header//////////////////////////
+
+    .search
+        display: none
+
+    .wpap-nav
+        display: block
+        margin: 0 auto
+        margin-top: 11px
+
+    .wpap-nav-inner 
+        display: flex
+        justify-content: center
+
+    .search-icon-adapt
+        display: flex
+
+    .logo
+        margin: 2px  
+        width: 34px
+
+    .block-search
+        width: auto
+
+    .language-logo
+        display: none
+
+    .language-logo-adapt
+        display: block
+
+    .block-registr
+        gap: 12px
+
+    #sing-up_btn
+        font-size: 12px
+        margin: 6px
+
+    .block-search
+        height: 42px        
+
+    #search-events
+        width: 73%
+
+    .search-icon-adapt 
+        width: 90%
+    
+    .search-icon-img-adapt
+        border: 2px solid rgb(217, 217, 217)
+        border-right: none
+        height: 42px
+        display: flex
+
+        justify-content: center
+        align-items: center
+        padding: 10px 5px 10px 10px
+        border-top-left-radius: 8px
+        border-bottom-left-radius: 8px
+
+    // greet ///////////////////////////////   
+
+    .title 
+        flex-direction: column     
+        margin-top: 30px  
+        margin-bottom: 24px
+        gap: 10px
+    
+    .headind-descr
+        gap: 20px
+
+    .headind-descr
+        width: 100%
+
+    .headind-descr h1
+        font-size: 25px
+        line-height: 122%
+
+    .headind-descr p 
+        font-size: 12px
+        line-height: 200%
+        color: #000
+
+    .headind-img
+        width: 100%
+        display: flex
+        justify-content: center
+
+    .events-title-all
+        display: none
+
+    .join-meetup
+        padding: 0
+        background: rgba(151, 202, 209, 0.08)
+        padding-bottom: 15px
+
+    .join-meetup-img
+        display: none
+
+    .join-meetup-img-adapt
+        display: block
+
+    .join-meetup-img-adapt-wrap
+        display: flex
+        justify-content: center
+
+    .join-meetup-img-adapt img
+        width: 238px
+        height: 136px
+        position: relative
+        right: 14px
+        bottom: 10px
+
+    .join-meetup-info h3
+        font-size: 20px
+        line-height: 180%
+
+    .upcoming-card 
+        margin-bottom: 60px
+
+    .join-meetup-info 
+        gap: 0
+
+    .join-meetup-info 
+        width: 100%
+
+    .join-meetup-info p
+        font-size: 12px
+        line-height: 200%
+        color: #000
+        margin-bottom: 22px
+
+    #sing-up-btn
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+
+    /////popular-meetup/////////////////////    
+    
+    .popular-meetup-city-img img
+        width: 153px
+        height: 153px
+
+    .info-meetup-block
+        flex-wrap: wrap
+        width: 100%
+
+    .info-meetup-item
+        width: 100%
+
+    #footer
+        padding: 24px 60px 40px 60px
+
+    .media
+        display: none
+
+    .footer-others p
+        display: none
+
+
+
+    //------------mobile---------------//
+
+@media (max-width: $mobile)  
+    body
+        margin: 0 auto
+        background: #fff
+
+    #main 
+        max-width: 370px
+        margin: 0 auto
+
+    
+
+    // events ///////////////////////////
+
+    .headind-img img 
+        width: 215px
+        height: 152px
+
+    .events-title-icon
+        font-size: 13px
+        gap: 6px
+
+    .events-title-all
+        display: none
+
+    .events-title-gen
+        gap: 5px    
+
+    .events-title-gen h3
+        font-size: 20px
+        line-height: 123%
+
+    .events-title-icon p
+        font-size: 13px
+
+    .events-title-icon img 
+        width: 16px
+        height: 16px
+
+    .events-block-row
+        flex-direction: column
+        gap: 30px
+
+    .events-card, .upcoming-card
+        flex-direction: row
+        gap: 7px
+        width: 100%
+        padding-top: 10px
+        border-top: 0.61px solid #d9d9d9
+        margin-bottom: 0
+
+    .events-card-descr, .upcoming-card-descr
+        display: flex
+        flex-direction: column
+        gap: 3px
+
+    .events-date, .upcoming-date
+        order: 1
+        align-items: center
+
+    .events-date-text, .upcoming-date-text
+        font-size: 8px
+        font-weight: 500
+        line-height: 143%
+        text-transform: uppercase
+        color: #7c6f50
+
+    .events-card-descr h4, .upcoming-card-descr h4
+        order: 2
+        font-weight: 500
+        font-size: 9px
+        line-height: 150%
+        margin-top: 0
+
+    .events-card-descr p, .upcoming-card-descr p
+        order: 3
+        font-weight: 400
+        font-size: 8px
+        padding: 0
+
+    .events-info, .upcoming-info 
+        order: 4
+        gap: 10px
+
+    .events-info-going-text, .events-info-free-text, .upcoming-info-going-text, .upcoming-info-free-text
+        font-weight: 500
+        font-size: 7px
+        line-height: 133%
+        color: #707070
+
+    .events-img, .upcoming-img
+        width: 97px
+        height: 54px
+
+    .events-block-row, .upcoming-block-row
+        margin-bottom: 0
+
+    .upcoming-title-all
+        display: none
+
+    .upcoming-title h3
+        font-size: 20px
+        line-height: 123%
+
+    .upcoming-title
+        margin-bottom: 15px
+
+    .upcoming-block-row
+        flex-direction: column
+
+    // explore-meetup /////////////////////////////////
+
+    .explore-meetup h3
+        font-size: 20px
+        line-height: 180%
+        margin-top: 0
+        margin-bottom: 23px
+
+    .explore-meetup-block
+        justify-content: space-around
+        margin-bottom: 48px
+
+    // popular-meetup ///////////////////////////////////
+
+    .popular-meetup
+        margin-bottom: 43px
+
+    .popular-meetup h3
+        font-size: 20px
+        line-height: 180%
+        margin-bottom: 0
+
+    .popular-meetup p
+        margin-bottom: 0
+        font-size: 12px
+        line-height: 200%
+
+    .popular-meetup-cities 
+        justify-content: space-around
+        gap: 0px
+
+    .popular-meetup-city
+        gap: 17px
+        margin-bottom: 17px
+
+    .popular-meetup-city p 
+        font-size: 14px
+
+
+    // info-meetup /////////////////////////////////
+
+    .info-meetup
+        margin-bottom: 32px
+
+    .info-meetup h3 
+        font-size: 20px
+        line-height: 180%
+        margin-bottom: 30px
+
+    .info-meetup-img img
+        width: 25px
+        height: 25px
+
+    .info-meetup-description
+        gap: 9px
+
+    .info-meetup-description h5
+        font-size: 12px
+        line-height: 124%       
+
+    .info-meetup-text
+        font-size: 9px
+
+    .info-meetup-more
+        font-size: 10px
+
+    .info-meetup-item
+        padding-top: 0px
+        padding-bottom: 0px
+
+    .info-meetup-block
+        gap: 46px
+
+
+    // friendships-meetup //////////////////////////////
+
+    .footer-title 
+        gap: 22px
+        padding-bottom: 35px
+        border-bottom: none
+
+    .friendships-meetup h3
+        font-size: 20px
+        line-height: 180%
+        margin-bottom: 27px
+
+    .friendships-meetup-about
+        display: none
+
+    .friendships-meetup-item 
+        width: 364px
+
+    .friendships-meetup-title
+        font-size: 16px
+        line-height: 168%
+
+    .friendships-meetup-text
+        font-size: 12px
+        line-height: 192%
+
+    .friendships-meetup-more 
+        font-size: 12px
+        line-height: 192%
+
+    .friendships-meetup-block
+        gap: 32px
+        margin-bottom: 124px
+
+    ///////footer//////////////////////////////    
+
+    #footer
+        padding: 20px 5px 30px 12px
+
+    .footer-others p
+        display: none
+
+    .top-line
+        border-top: 1px solid #707070
+        padding-top: 35px
+
+    .footer-description
+        margin-top: 0
+        margin-bottom: 16px
+
+    .null-line
+        margin-top: 35px
+
+    .social
+        margin-bottom: 44px
+
+
+        
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

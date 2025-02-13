@@ -1,0 +1,100 @@
+@use 'variables'    
+@use 'mixins'
+
+
+
+#footer 
+    background: #212121
+    padding: 24px 196px 40px 196px
+
+.footer-inner
+    max-width: 1512px
+    margin: 0 auto
+
+.footer-title 
+    @include mixins.flex-row-gap(flex, 36px)
+    align-items: center
+    padding-bottom: 25px
+    border-bottom: 1px solid #707070
+
+.footer-title-btn
+    cursor: pointer
+
+.footer-title-btn:hover
+    color: #f0c9c9
+    transition: 0.4s
+
+.footer-title-text 
+    @include mixins.font-weight-size-height-color(600, 16px, 150%, #f6f7f8)
+
+
+.footer-title-btn 
+    @include mixins.font-weight-size-height-color(600, 16px, 150%, #fff)
+    border: 2px solid #fff
+    border-radius: 6px
+    min-width: 119px
+    height: 44px
+    background: #212121
+
+.footer-description 
+    display: flex
+    margin-bottom: 36px
+    margin-top: 24px
+
+.footer-heading,
+.footer-follow-us p 
+    @include mixins.font-size-height-color(16px, 150%, #f6f7f8)
+
+
+.footer-description-column 
+    @include mixins.flex-column-gap(flex, column, 7px)
+    width: 33.3%
+
+
+.footer-description-column a 
+    @include mixins.font-size-height-color(14px, 143%, variables.$footer-color)
+
+
+.footer-description-column a:hover
+    color: #fff 
+
+
+.social-media 
+    @include mixins.flex-row-gap(flex, null)
+    margin-top: 12px
+    justify-content: space-between
+
+.social 
+    @include mixins.flex-row-gap(flex, 32px)
+    margin-bottom: 48px
+
+.social a:hover
+    position: relative
+    bottom: 3px
+    transition: .4s
+
+.media a:hover
+    position: relative
+    bottom: 3px
+    transition: .4s
+
+.social img 
+    width: 25px
+    height: 25px
+
+.footer-others 
+    @include mixins.flex-row-gap(flex, 32px)
+
+
+.footer-others-year 
+    @include mixins.font-size-height-color(14px, 143%, #fff)
+
+
+.footer-others a
+    @include mixins.font-size-height-color(14px, 143%, variables.$footer-color)
+
+.footer-others a:hover
+    color: #fff 
+
+
+

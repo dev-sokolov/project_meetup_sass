@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор мероприятия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link rel="stylesheet" href="../dist/event-filter/style-filter.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <main id="main-wrap">
+        <section id="main-filter">
+            <div id="section-filter">
+                <div class="wpap-nav">
+                    <div class="wpap-nav-inner">
+                        <div class="search-icon-adapt">
+                            <div class="search-icon-img-adapt">
+                                <img src="../assets/img/header-icon/search.svg" alt="search">
+                            </div>
+
+                            <input type="text" id="search-events" placeholder="Search events">
+                            <button id="search-btn"><img src="../assets/img/header-icon/search-white.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-filter">
+                    <h1>Events near New York, NY</h1>
+                    <p class="title-filter-events">Events</p>
+                </div>
+                <div class="enents-filter">
+                    <select name="select-type" id="select-type" class="select-2 select">
+                        <option class="opt" value="">Any type</option>
+                        <option class="opt" value="offline">offline</option>
+                        <option class="opt disabledOnline" value="online">online</option>
+                    </select>
+                    <select name="select-distance" id="select-distance" class="select-3 disabledDistance select">
+                        <option value="">Any distance</option>
+                        <option value="50">50 km</option>
+                        <option value="25">25 km</option>
+                        <option value="10">10 km</option>
+                        <option value="100">100 km</option>
+                        <option value="75">75 km</option>
+                        <option value="15">15 km</option>
+                    </select>
+                    <select name="select-category" id="select-category" class="select-4 select">
+                        <option value="">Any category</option>
+                        <option value="Hobbies and Passions">Hobbies and Passions</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Business">Business</option>
+                        <option value="Social Activities">Health and Wellbeing</option>
+                        <option value="Health and Wellbeing">Health and Wellbeing</option>
+                    </select>
+                    <select name="select-date" id="select-date" class="select-1 select">
+                        <option value="">Any date</option>
+                        <option value="23.02.2024 15:00">23.02 15:00</option>
+                        <option value="23.02.2024 11:30">23.02 11:30</option>
+                        <option value="16.02.2024 14:00">16.02 14:00</option>
+                        <option value="13.02.2024 11:00">13.02 11:00</option>
+                        <option value="14.02.2024 11:00">14.02 11:00</option>
+                        <option value="23.03.2024 15:00">23.03 15:00</option>
+                    </select>
+                </div>
+                <div class="cards-filtered"></div>
+
+            </div>
+            <div id="map">
+                <div class="map">
+                    <div class="map-title">
+                        <p>Find events near</p>
+                        <h5>New York, NY</h5>
+                    </div>
+                    <div class="map-img">
+                        <img src="../assets/events-filter-img/map.png" alt="map">
+                        <div class="map-btn"><img src="../assets/events-filter-img/btn-map.svg" alt="map button"></div>
+                        <div class="cross-btn"><img src="../assets/events-filter-img/cross.svg" alt="cross button"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+    </footer>
+
+    <script src="../js/loadComponents.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

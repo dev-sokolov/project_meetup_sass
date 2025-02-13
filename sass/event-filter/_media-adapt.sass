@@ -1,0 +1,80 @@
+
+@use 'variables'    
+@use 'mixins'
+
+
+$mobile: 393px
+$tablet: 820px
+$laptop: 1024px
+
+@media (max-width: $laptop)
+    #map
+        display: none
+
+@media (max-width: $tablet)
+    #main-filter
+        padding-top: 0
+
+    .title-filter h1
+        margin-top: 22px
+
+    .enents-filter
+        margin-bottom: 40px
+
+
+
+@media (max-width: $mobile)  
+
+    #main-filter
+        max-width: 370px
+        margin: 0 auto
+        padding-top: 0
+
+    #section-filter
+        width: 100%
+
+    #map
+        display: none
+
+    .title-filter h1
+        font-size: 25px
+        line-height: 144%
+        margin-top: 20px
+
+    .enents-filter
+        margin-bottom: 18px
+        height: 72px
+        overflow-x: scroll
+
+        &::-webkit-scrollbar 
+            width: 100px 
+        &::-webkit-scrollbar-thumb 
+            background: #c4c4c4 
+            border-radius: 10px
+
+            &:hover 
+                background: #555
+
+    .card
+        padding-bottom: 0
+    .card-img 
+        width: 97px
+        height: 54px
+
+    .card-date
+        font-size: 8px
+        text-transform: uppercase
+
+    .card-title
+        font-size: 9px
+
+    .card-category
+        font-weight: 400
+        font-size: 8px
+
+    .card-attendees
+        display: none
+
+    .cards-filtered
+        margin-bottom: 20px
+

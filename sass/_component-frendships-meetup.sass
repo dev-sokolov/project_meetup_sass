@@ -1,0 +1,58 @@
+
+@use 'variables'    
+@use 'mixins'
+
+
+.friendships-meetup h3 
+    @include mixins.font-weight-size-height-color(600, 28px, 129%, variables.$main-color)
+
+
+.friendships-meetup-about 
+    @include mixins.font-size-height-color(16px, 150%, variables.$additional-color)
+    margin-top: 16px
+    margin-bottom: 28px
+    width: 70%
+
+
+.friendships-meetup-block 
+    @include mixins.flex-row-gap(flex, 34px)
+    flex-wrap: wrap
+    margin-bottom: 54px
+
+
+.friendships-meetup-item 
+    display: flex
+    flex-direction: column
+    width: 376px
+
+.friendships-meetup-img:hover
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
+.friendships-meetup-img img
+    width: 100%
+
+
+.friendships-meetup-title 
+    @include mixins.font-weight-size-height-color(600, 18px, 156%, variables.$main-color)
+    margin-top: 24px
+    margin-bottom: 12px
+
+
+.friendships-meetup-text 
+    @include mixins.font-size-height-color(16px, 150%, variables.$additional-color)
+    margin-bottom: 16px
+
+
+.friendships-meetup-more 
+    @include mixins.font-size-height-color(16px, 150%, variables.$lincs-color)
+
+
+.friendships-meetup-more:hover 
+    cursor: pointer
+    position: relative
+    bottom: 4px
+    transition: 0.3s 
+
